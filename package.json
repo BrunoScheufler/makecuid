@@ -9,12 +9,12 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "@types/minimist": "^1.2.0",
-    "@types/node": "^12.12.14",
-    "prettier": "^1.19.1",
-    "semantic-release": "^15.13.31",
-    "tslint": "^5.20.1",
-    "typescript": "^3.7.2"
+    "@types/minimist": "1.2.0",
+    "@types/node": "12.12.14",
+    "prettier": "1.19.1",
+    "semantic-release": "15.13.31",
+    "tslint": "5.20.1",
+    "typescript": "3.7.2"
   },
   "dependencies": {
     "cuid": "^2.1.6",
