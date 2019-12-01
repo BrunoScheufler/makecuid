@@ -1,0 +1,37 @@
+{
+  "name": "makecuid",
+  "version": "0.0.0",
+  "description": "CUID generation helper",
+  "main": "build/index.js",
+  "bin": "build/index.js",
+  "repository": "https://github.com/BrunoScheufler/makecuid",
+  "author": "Bruno Scheufler",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^12.12.14",
+    "prettier": "^1.19.1",
+    "semantic-release": "^15.13.31",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "cuid": "^2.1.6",
+    "minimist": "^1.2.0"
+  },
+  "scripts": {
+    "build": "tsc --project .",
+    "lint": "tslint --project . && prettier --check src/**/*.ts",
+    "test": "exit 0",
+    "release-package": "semantic-release"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
+  }
+}
