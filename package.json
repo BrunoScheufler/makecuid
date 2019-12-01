@@ -26,6 +26,7 @@
     "test": "exit 0",
     "release-package": "semantic-release"
   },
+  "files": ["build"],
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
